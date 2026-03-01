@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  openfang:
+    build: .
+    # image: ghcr.io/rightnow-ai/openfang:latest  # Uncomment when GHCR is public
+    expose:
+      - "4200"
+    #volumes:
+      #- openfang-data:/data
+    restart: unless-stopped
